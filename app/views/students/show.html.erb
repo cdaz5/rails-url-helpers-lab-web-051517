@@ -1,1 +1,9 @@
 <h1><%= @student.to_s %></h1>
+
+This student is currently
+<%= case @student.active
+when true
+    "active."
+  else
+    "inactive."
+end %> </p>

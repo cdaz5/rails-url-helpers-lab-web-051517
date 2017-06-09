@@ -1,0 +1,13 @@
+<h1><%= @student.to_s %></h1>
+
+<form class="" action="/students" method="PATCH">
+
+  <input type="radio" name="student[:active]" value="Active" <%= 'checked' if @student.active == true%>>Active
+  <input type="radio" name="student[:active]" value="Inactive" <%= 'checked' if @student.active == false%>> Inactive
+<br>
+
+
+  <button>Submit</button>
+  
+
+</form>
